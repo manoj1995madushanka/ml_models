@@ -1,0 +1,16 @@
+2025-12-06 22:05:38.676 | INFO     | __main__:main:23 - running the application...
+2025-12-06 22:05:38.676 | INFO     | model.model_service:load_model:42 - checking the existance of model config file at model/models/rf_db_v2
+2025-12-06 22:05:38.676 | WARNING  | model.model_service:load_model:52 - model at model/models/rf_db_v2 was not found -> building rf_db_v2
+2025-12-06 22:05:38.677 | INFO     | model.pipeline.model:build_model:34 - starting up model building pipeline
+2025-12-06 22:05:38.677 | INFO     | model.pipeline.preparation:prepare_data:26 - starting up preprocessing pipeline
+2025-12-06 22:05:38.677 | INFO     | model.pipeline.collection:load_data_from_db:26 - extracting the table from the database
+2025-12-06 22:05:38.717 | INFO     | model.pipeline.preparation:_encode_cat_cols:43 - encoding categorical columns: ['balcony', 'parking', 'furnished', 'garage', 'storage']
+2025-12-06 22:05:38.723 | INFO     | model.pipeline.preparation:_parse_garden_col:61 - pasring garden column
+2025-12-06 22:05:38.725 | INFO     | model.pipeline.model:_get_x_y:83 - defining X and Y variables. X vars: ['area', 'constraction_year', 'bedrooms', 'garden', 'balcony_yes', 'parking_yes', 'furnished_yes', 'garage_yes', 'storage_yes']; y var: rent
+2025-12-06 22:05:38.726 | INFO     | model.pipeline.model:_split_train_test:101 - splitting data into train and test sets
+2025-12-06 22:05:38.728 | INFO     | model.pipeline.model:_train_model:123 - training a model with hyperparameters
+2025-12-06 22:06:11.899 | INFO     | model.pipeline.model:_evaluate_model:163 - evaluating model performance. SCORE=0.7114076006728483
+2025-12-06 22:06:11.900 | INFO     | model.pipeline.model:_save_model:178 - saving a model to a directory: model/models/rf_db_v2
+2025-12-06 22:06:11.919 | INFO     | model.model_service:load_model:58 - model rf_db_v2 exists! -> loading model configuration file
+2025-12-06 22:06:11.934 | INFO     | model.model_service:predict:79 - making prediction!
+2025-12-06 22:06:11.946 | INFO     | __main__:main:39 - prediction = [1903.71458333]
