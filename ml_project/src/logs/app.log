@@ -10,3 +10,8 @@
 2025-12-07 21:10:04.383 | INFO     | model.pipeline.model:_train_model:123 - training a model with hyperparameters
 2025-12-07 21:10:27.621 | INFO     | model.pipeline.model:_evaluate_model:163 - evaluating model performance. SCORE=0.8218531944774063
 2025-12-07 21:10:27.621 | INFO     | model.pipeline.model:_save_model:178 - saving a model to a directory: model/models/rf_db_v2
+2025-12-07 21:36:03.368 | INFO     | __main__:main:23 - running the application...
+2025-12-07 21:36:03.368 | INFO     | model.model_inference:load_model:47 - checking the existance of model config file at model/models/rf_db_v2
+2025-12-07 21:36:03.369 | INFO     | model.model_inference:load_model:59 - model rf_db_v2 exists! -> loading model configuration file
+2025-12-07 21:38:39.340 | INFO     | model.model_inference:predict:80 - making prediction!
+2025-12-07 21:38:39.351 | INFO     | __main__:main:39 - prediction = [2039.75]

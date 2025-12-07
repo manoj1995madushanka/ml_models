@@ -9,7 +9,7 @@ run_inference: install
 	cd src; poetry run python3 runner_inference.py
 
 install: pyproject.toml
-	poetry install
+	poetry install --no-root
 
 clean:
 	rm -rf `find . -type d -name __pycache__`
